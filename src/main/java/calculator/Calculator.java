@@ -15,11 +15,12 @@ public class Calculator {
 	{
 		System.out.println("Option Menu");
 		System.out.println("1. Addition");
-		System.out.println("2. Exit");
+		System.out.println("2. Substraction");
+		System.out.println("3. Exit");
 		System.out.println("Enter your choice");
 		
 		choice=scanner.nextInt();
-		if(choice==2)
+		if(choice==3)
 			flag=1;
 		else
 		{
@@ -33,6 +34,9 @@ public class Calculator {
 			{
 				case 1:
 					System.out.println(operand1+operand2);
+					break;
+				case 2:
+					System.out.println(operand1-operand2);
 					break;
 				default:
 					System.out.println("Exiting program");
