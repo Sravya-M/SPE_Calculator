@@ -15,8 +15,9 @@ public class Calculator {
 	{
 		System.out.println("Option Menu");
 		System.out.println("1. Addition");
-		System.out.println("2. Substraction");
-		System.out.println("3. Exit");
+		System.out.println("2. Subtraction");
+		System.out.println("3. Multiplication");
+		System.out.println("4. Exit");
 		System.out.println("Enter your choice");
 		
 		choice=scanner.nextInt();
@@ -37,6 +38,9 @@ public class Calculator {
 					break;
 				case 2:
 					System.out.println(operand1-operand2);
+					break;
+				case 3:
+					System.out.println(operand1*operand2);
 					break;
 				default:
 					System.out.println("Exiting program");
