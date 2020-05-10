@@ -21,7 +21,7 @@ public class Calculator {
 		System.out.println("Enter your choice");
 		
 		choice=scanner.nextInt();
-		if(choice==3)
+		if(choice==4)
 			flag=1;
 		else
 		{
