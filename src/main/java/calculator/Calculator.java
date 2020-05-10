@@ -17,11 +17,12 @@ public class Calculator {
 		System.out.println("1. Addition");
 		System.out.println("2. Subtraction");
 		System.out.println("3. Multiplication");
-		System.out.println("4. Exit");
+		System.out.println("4. Division");
+		System.out.println("5. Exit");
 		System.out.println("Enter your choice");
 		
 		choice=scanner.nextInt();
-		if(choice==4)
+		if(choice==5)
 			flag=1;
 		else
 		{
@@ -41,6 +42,11 @@ public class Calculator {
 					break;
 				case 3:
 					System.out.println(operand1*operand2);
+					break;
+				case 4:
+					if(operand2==0)
+						System.out.println("Please enter non zero number");
+					System.out.println(operand1/operand2);
 					break;
 				default:
 					System.out.println("Exiting program");
